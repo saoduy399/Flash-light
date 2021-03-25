@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flash light</title>
+    <script src="Battery.js"></script>
+    <script src="flash light.js"></script>
+</head>
+<body>
+<button onclick="flash.turnOn()">turn on</button>
+<button onclick="flash.turnOff()">turn off</button>
+<script>
+    let flash=new FlashLight();
+    let battery=new Battery();
+    flash.connectBattery(battery)
+</script>
+</body>
+</html>
